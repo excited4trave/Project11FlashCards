@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sytle.css">
+    <title>Flash Card</title>
+</head>
+<body>
+    <header>
+        <nav>
+        
+            <div class="header-box">
+                <div class="flash-card-heading"><h1>Flas Card</h1></div>
+                <div class="btns"><button onclick="show_flash_card_window()" >New Card</button><button onclick="delFlashcards()">Delete</button>
+                </div>
+            </div>
+            
+        
+       </nav>
+</header>
+    <div class="container">
+        <div id="create-box-id" class="create-box">
+            <h1>Create Flash Card</h1>
+        <label for="question">Question</label><textarea  id="question" cols="30" rows="2"></textarea>
+        <br>
+        <label for="answer">Question</label><textarea  id="answer" cols="30" rows="2"></textarea>
+    <br>
+    
+    <div>
+
+    <button onclick="add_flash_card()">Save</button>
+    <button onclick="close_flash_card_window()" >Close</button>   
+    
+    </div>
+     </div>
+       
+    <div class="flash-cards">
+            
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

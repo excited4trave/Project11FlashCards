@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 5px solid green;
+    display: flex;
+   /* height: 90vh;*/
+    flex-direction: column;
+}
+.header-box{
+    border: 5px solid red;
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+    height: 20%;
+    width: 100%;
+    justify-content: space-between;
+}
+.flash-card-heading{
+    border: 5px solid yellow;
+}
+.btns{
+    border: 5px solid lightblue;
+    display: flex;
+    align-items: end;
+    
+    text-align: right;
+    width: fit-content;
+    align-items: center;
+    
+
+}
+.btns button{
+    padding: 5px 30px;
+    margin: 5px;
+}
+.create-box{
+         border: 5px solid yellow;
+         background-color: rgba(211, 211, 211, 0.824);
+         display: block;
+         width: 400px;
+         height:250px;
+         border-radius: 2%;
+         position: relative;
+         margin: auto;
+         margin-top: 50px;
+         padding: 50px;
+
+        }   
+.create-box textarea{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.flash-card{
+    /*border: 5px solid orange;*/
+    background-color:rgba(211, 211, 211, 0.217);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 300px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px; 
+    
+}
+.flash-card h2{
+    padding-top: 50px;
+}
+.flash-cards{
+           border: 5px solid skyblue;   
+           display: flex;
+           justify-content: flex-start;
+           align-items: flex-start;
+           flex-wrap: wrap;
+           width: 100%;
+           margin: auto;
+           margin-top: 10px;
+
+           
+}
+
+@media (max-width:768px) {
+    .flash-card{
+        margin: auto;
+    }
+    .flash-card{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:480px){
+.header-box{
+    flex-direction: column;
+    align-items: center;
+}
+    .create-box{
+    width: 100%;
+}
+.flash-card{
+    width: 100%;
+}
+
+
+}
